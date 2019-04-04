@@ -85,7 +85,7 @@ def create_encoded_mxfile(diagram:ET.Element, id_diagram: str, page_name: str='P
 
 
 def save_xml(mxfile: ET.Element, file_path: str)->None:
-    ET.ElementTree(mxfile).write(open(file_path,'w'), encoding='unicode')
+    ET.ElementTree(mxfile).write(open(file_path+'.drawio','w'), encoding='unicode')
 
 # +
 # import test
